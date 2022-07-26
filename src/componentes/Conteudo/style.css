@@ -1,0 +1,124 @@
+.container-baner {
+  height: 90vh;
+  background-image: url("/public/SVGs/fotoBaner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.conteudo-baner {
+  width: 100%;
+  font-size: 3.1em;
+  font-weight: 600;
+  line-height: 80px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(3, 0, 28, 0.6);
+  padding: 30px;
+}
+.container-baner h1::before {
+  content: "1º ";
+  color: #ffc501;
+}
+.conteudo-baner p {
+  font-size: 0.8em;
+  font-weight: 300;
+  text-decoration: underline #ffc501;
+}
+@media (max-width: 740px) {
+  .conteudo-baner {
+    font-size: 2.3em;
+    line-height: 70px;
+  }
+}
+@media (max-width: 460px) {
+  .conteudo-baner {
+    font-size: 1.3em;
+    line-height: 50px;
+  }
+}
+/* fim baner */
+.container-conteudo {
+  background-color: #f5f5f5;
+}
+.box-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5 auto);
+  color: #03001c;
+}
+.titulo-conteudo {
+  font-size: 2.2em;
+  line-height: 40px;
+  margin-top: 50px;
+  grid-column: 1/3;
+  padding: 10px 20px;
+}
+
+.container-conteudo p {
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 20px;
+}
+.paragrafo-1 {
+  margin-top: 20px;
+  grid-row: 2/3;
+}
+.paragrafo-2 {
+  grid-row: 4/5;
+}
+.lista-conteudo {
+  grid-row: 3/4;
+  padding-left: 50px;
+}
+.container-conteudo img {
+  max-width: 529px;
+  grid-row: 2/5;
+}
+.icones-cofederacao {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #03001c;
+}
+.icones-cofederacao img {
+  width: 50px;
+  padding: 20px;
+}
+@media (max-width: 740px) {
+  .box-conteudo {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-conteudo img {
+    margin: 0 auto;
+  }
+  .icones-cofederacao {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 460px) {
+  .titulo-conteudo {
+    font-size: 1.9em;
+    line-height: 38px;
+  }
+  .container-conteudo p {
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  .lista-conteudo {
+    font-size: 00.8em;
+  }
+  .container-conteudo img {
+    max-width: 300px;
+  }
+  .icones-cofederacao img {
+    width: 30px;
+    padding: 10px;
+  }
+}
